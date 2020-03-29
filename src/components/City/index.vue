@@ -1,6 +1,8 @@
 <template>
     <div class="city_body">
+		
 				<div class="city_list">
+					<div>
 					        <div class="city_hot">
 								<h2>Popular City</h2>
 								<ul class="clearfix">
@@ -13,7 +15,7 @@
 							</div>
 							<div class="city_sort">
 								<div>
-									<h2>A</h2>
+									<h2 id="d1">A</h2>
 									<ul>
 										<li>Ajax</li>
                                         <li>Abbotsford</li>
@@ -22,9 +24,9 @@
 								</div>
 
                                 <div>
-									<h2>B</h2>
+									<h2 id="d2">B</h2>
 									<ul>
-										<li>Brampton</li>
+										<li >Brampton</li>
                                         <li>Burnaby</li>
                                         <li>Barry</li>
 
@@ -32,9 +34,9 @@
 								</div>
 
                                 <div>
-									<h2>C</h2>
+									<h2 id="d3">C</h2>
 									<ul>
-										<li>Calgary</li>
+										<li >Calgary</li>
                                         <li>Cambridge</li>
                                         <li>Coquitlam</li>
                                         <li>Chatham-Kent</li>
@@ -43,18 +45,18 @@
 								</div>
 
                                 <div>
-									<h2>E</h2>
+									<h2 id="d4">E</h2>
 									<ul>
-										<li>Edmonton</li>
+										<li >Edmonton</li>
                                         
 
 									</ul>
 								</div>
 
                                 <div>
-									<h2>G</h2>
+									<h2 id="d5">G</h2>
 									<ul>
-										<li>Gatineau</li>
+										<li >Gatineau</li>
                                         <li>Great sudbury</li>
                                         <li>Guihu</li>
 
@@ -62,7 +64,7 @@
 								</div>
 
                                 <div>
-									<h2>H</h2>
+									<h2  id="d6">H</h2>
 									<ul>
 										<li>Halifax</li>
                                         <li>Hamilton</li>
@@ -71,9 +73,9 @@
 								</div>
 
                                 <div>
-									<h2>K</h2>
+									<h2 id="d7">K</h2>
 									<ul>
-										<li>Kelowna</li>
+										<li >Kelowna</li>
                                         <li>Kingston</li>
                                         <li>Kitchina</li>
 
@@ -81,9 +83,9 @@
 								</div>
 
                                 <div>
-									<h2>L</h2>
+									<h2 id="d8">L</h2>
 									<ul>
-										<li>Langier</li>
+										<li >Langier</li>
                                         <li>Langley City</li>
                                         <li>Laval</li>
                                         <li>Levi</li>
@@ -93,9 +95,9 @@
 								</div>
 
                                 <div>
-									<h2>M</h2>
+									<h2 id="d9">M</h2>
 									<ul>
-										<li>Markham</li>
+										<li >Markham</li>
                                         <li>Mikawa</li>
                                         <li>Mississauga</li>
                                         <li>Montreal</li>
@@ -104,7 +106,7 @@
 								</div>
 
                                 <div>
-									<h2>O</h2>
+									<h2 id="d10">O</h2>
 									<ul>
 										<li>Oakville</li>
                                         <li>Oshawa</li>
@@ -114,14 +116,14 @@
 								</div>
 
                                 <div>
-									<h2>Q</h2>
+									<h2 id="d11">Q</h2>
 									<ul>
 										<li>Quebec City</li>
                                 	</ul>
 								</div>
 
                                 <div>
-									<h2>R</h2>
+									<h2 id="d12">R</h2>
 									<ul>
 										<li>Regina</li>
                                         <li>Richmond</li>
@@ -131,7 +133,7 @@
 								</div>
 
                                 <div>
-									<h2>S</h2>
+									<h2 id="d13">S</h2>
 									<ul>
 										<li>Saguenay</li>
                                         <li>Saktun</li>
@@ -145,7 +147,7 @@
 								</div>
 
                                  <div>
-									<h2>T</h2>
+									<h2 id="d14">T</h2>
 									<ul>
 										<li>Taylorburn</li>
                                         <li>Thunder Bay</li>
@@ -155,7 +157,7 @@
 								</div>
 
                                  <div>
-									<h2>V</h2>
+									<h2 id="d15">V</h2>
 									<ul>
 										<li>Vancouver</li>
                                         <li>Vaughan</li>
@@ -164,34 +166,35 @@
 								</div>
 
                                  <div>
-									<h2>W</h2>
+									<h2 id="d16">W</h2>
 									<ul>
-										<li>Whitby</li>
+										<li >Whitby</li>
                                         <li>Windsor</li>
                                         <li>Winnipeg</li>
 
 									</ul>
 								</div>
 							</div>
+							</div>
 						</div>			
 					<div class="city_index">
 					<ul>
-						<li>A</li> 
-                        <li>B</li> 
-                        <li>C</li> 
-                        <li>E</li> 
-                        <li>G</li> 
-                        <li>H</li> 
-                        <li>K</li> 
-                        <li>L</li> 
-                        <li>M</li> 
-                        <li>O</li> 
-                        <li>Q</li> 
-                        <li>R</li> 
-                        <li>S</li> 
-                        <li>T</li> 
-                        <li>V</li> 
-                        <li>W</li> 
+						<li><a href="#d1">A</a></li> 
+                        <li><a href="#d2">B</a></li> 
+                        <li><a href="#d3">C</a></li> 
+                        <li><a href="#d4">E</a></li> 
+                        <li><a href="#d5">G</a></li> 
+                        <li><a href="#d6">H</a></li> 
+                        <li><a href="#d7">K</a></li> 
+                        <li><a href="#d8">L</a></li> 
+                        <li><a href="#d9">M</a></li> 
+                        <li><a href="#d10">O</a></li> 
+                        <li><a href="#d11">Q</a></li> 
+                        <li><a href="#d12">R</a></li> 
+                        <li><a href="#d13">S</a></li> 
+                        <li><a href="#d14">T</a></li> 
+                        <li><a href="#d15">V</a></li> 
+                        <li><a href="#d16">W</a></li> 
 					</ul>
 				</div>
 				</div>
@@ -201,8 +204,12 @@
 
 
 <script>
+import BScroll from 'better-scroll';
 export default {
-    name:'City'
+	name:'City'
+
+	
+	
 }
 </script>
 
@@ -213,6 +220,7 @@ export default {
     background-color:transparent;
     width:0;
 }
+a{text-decoration: none;}
 .city_body .city_hot{ margin-top: 20px;}
 .city_body .city_hot h2{ padding-left: 15px; line-height: 30px; font-size: 14px; background:#F0F0F0; font-weight: normal;}
 /* .city_body .city_hot ul{} */

@@ -1,5 +1,6 @@
 <template>
     <div id="main">
+		
        <Header  title="YY Movie"></Header>
         <div id="content">
 			<div class="movie_menu">
@@ -14,14 +15,28 @@
 					<i class="iconfont icon-sousuo"></i>
 				</router-link>
 			</div>
+			 
 			<transition mode="out-in">
-            <keep-alive>
-                <router-view />
-            </keep-alive>
+			<keep-alive>
+			<router-view />
+			</keep-alive>
+			  
+			 
+               
+            
 			</transition>
-        </div>   
+           
+			
+			
+        </div>  
+		
          <Tabbar />
+		 <transition mode="out-in">
+		 <router-view name="detail"/>
+			</transition>
     </div>
+	
+	
 </template>
 
 <script>

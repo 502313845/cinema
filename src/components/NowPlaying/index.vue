@@ -1,11 +1,12 @@
 <template>
-     <div class="movie_body">
+
+     <div class="movie_body" ref="bscroll">
 		
 			<ul>
 				<li>
-			    <div class="pic_show"><img src="/images/movie_1.jpg"></div>
+			  <div class="pic_show" @click="handle()"><img src="/images/movie_1.jpg"></div>
 					<div class="info_list">
-						<h2>无名之辈</h2>
+					<h2 @click="handle()">无名之辈</h2>
 						<p>观众评 <span class="grade">9.2</span></p>
 						<p>主演: 陈建斌 / 任素汐 / 大潘</p>
 						<p>今天55家影院放映600场</p>
@@ -14,11 +15,12 @@
 						购票
 					</div>
                 </li>
+				
 
                 <li>
 			    <div class="pic_show"><img src="/images/movie_3.jpg"></div>
 					<div class="info_list">
-						<h2>复仇者联盟4:终局之战</h2>
+						<h2>复仇者联盟4:终局之战<img src="@/assets/maxs.png" alt=""></h2>
 						<p>观众评 <span class="grade">9.7</span></p>
 						<p>主演: 小罗伯特·唐尼 / 克里斯·埃文斯 / 克里斯·海姆斯沃斯</p>
 						<p>今天56家影院放映450场</p>
@@ -31,7 +33,7 @@
                 <li>
 			    <div class="pic_show"><img src="/images/movie_4.jpg"></div>
 					<div class="info_list">
-						<h2>哪吒之魔童降世</h2>
+						<h2>哪吒之魔童降世<img src="@/assets/maxs.png" alt=""></h2>
 						<p>观众评 <span class="grade">9.6</span></p>
 						<p>主演: 吕艳婷 / 囧森瑟夫 / 瀚墨 / 陈浩 / 绿绮</p>
 						<p>今天60家影院放映800场</p>
@@ -45,7 +47,7 @@
                 <li>
 			    <div class="pic_show"><img src="/images/movie_2.jpg"></div>
 					<div class="info_list">
-						<h2>毒液</h2>
+						<h2>毒液<img src="@/assets/maxs.png" alt=""></h2>
 						<p>观众评 <span class="grade">9.5</span></p>
 						<p>主演: 汤姆·哈迪 / 米歇尔·威廉姆斯 / 大潘</p>
 						<p>今天55家影院放映600场</p>
@@ -54,17 +56,60 @@
 						购票
 					</div>
                 </li>
+
+				<li>
+			    <div class="pic_show"><img src="/images/movie_8.jpg"></div>
+					<div class="info_list">
+						<h2>少年的你</h2>
+						<p>观众评 <span class="grade">8.5</span></p>
+						<p>主演: 周冬雨 / 易烊千玺 / 尹昉 / 周也 / 吴越</p>
+						<p>今天55家影院放映650场</p>
+					</div>
+					<div class="btn_mall">
+						购票
+					</div>
+                </li>
+
+				
 			</ul>
-		
-	</div>  
+		</div>
+	  
 </template>
 
 
+
 <script>
+import BScroll from 'better-scroll';
+
+
+
 export default {
-    name:'NowPlaying'
+	
+   name:'NowPlaying',
+	methods:{
+		handle(){
+			this.$router.push('/movie/detail');
+			
+
+		},
+		
+		
+	},
+
+    
+	
+
+	
 }
+   
+
+	
+ 
+	
+	
+
 </script>
+
 
 <style scoped>
 #content .movie_body{ flex:1; overflow:auto;}

@@ -10,6 +10,12 @@ export default{
          component:()=>import("@/components/ComingSoon"),},
         {path:'search',
         component:()=>import("@/components/Search"),},
+
+        {path:'detail',
+        components:{detail:()=>import("@/views/Movie/detail"),}},
+       
+      
+        
         {
             path:'/movie',redirect:'/movie/nowPlaying'
         }

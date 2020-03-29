@@ -1,4 +1,5 @@
 <template>
+   
     <div class="search_body">
 				<div class="search_input">
 					<div class="search_input_wrapper">
@@ -7,44 +8,31 @@
 					</div>					
 				</div>
 				<div class="search_result">
-					<h3>Movies/Shows/TV series</h3>
+					<h3>Movie</h3>
 					<ul>
 						<li>
-							<div class="img"><img src="/images/movie_1.jpg"></div>
-							<div class="info">
-								<p><span>无名之辈</span><span>9.2</span></p>
-								<p>A Cool Fish</p>
-								<p>剧情，喜剧，犯罪</p>
-								<p>2020-02-02</p>
-							</div>
-						</li>
-                        <li>
 							<div class="img"><img src="/images/movie_5.jpg"></div>
 							<div class="info">
 								<p><span>花木兰</span><span>0.0</span></p>
 								<p>Mu Lan</p>
-								<p>历史，战争，动作</p>
-								<p>2020-05</p>
-							</div>
-						</li>
-                        <li>
-							<div class="img"><img src="/images/movie_3.jpg"></div>
-							<div class="info">
-								<p><span>复仇者联盟4: 终局之战</span><span>9.7</span></p>
-								<p>Avengers 4: Endgame</p>
-								<p>剧情，科幻，动作</p>
-								<p>2019-04-02</p>
+								<p>Action, History</p>
+								<p>主演: 刘亦菲 / 安柚鑫 / 甄子丹 / 巩俐 / 曾晓童</p>
 							</div>
 						</li>
 					</ul>
 				</div>
-			</div>
+			   
+               
+				
+    </div>
+			
 </template>
 
 
 <script>
 export default {
-    name:'Search'
+	name: "Search",
+	
 }
 </script>
 

@@ -1,11 +1,11 @@
 <template>
-    <div class="movie_body">
+    <div class="movie_body" ref="bscroll">
         	<ul>
 				<li>
 			    <div class="pic_show"><img src="/images/movie_5.jpg"></div>
 					<div class="info_list">
-						<h2>花木兰</h2>
-						<p>观众评 <span class="grade">0.0</span></p>
+						<h2>花木兰<img src="@/assets/maxs.png" alt=""></h2>
+						<p><span>23222 people want to watch</span></p>
 						<p>主演: 刘亦菲 / 安柚鑫 / 甄子丹 / 巩俐 / 曾晓童</p>
 						<p>今天55家影院放映600场</p>
 					</div>
@@ -17,8 +17,8 @@
                 <li>
 			    <div class="pic_show"><img src="/images/movie.jpg"></div>
 					<div class="info_list">
-						<h2>速度与激情9</h2>
-						<p>观众评 <span class="grade">0.0</span></p>
+						<h2>速度与激情9<img src="@/assets/maxs.png" alt=""></h2>
+						<p><span>4565 people want to watch</span></p>
 						<p>主演: 范·迪塞尔 / 米歇尔·罗德里格兹 / 查理兹·塞隆 / 吉姆·帕拉克</p>
 						<p>今天56家影院放映450场</p>
 					</div>
@@ -30,8 +30,8 @@
                 <li>
 			    <div class="pic_show"><img src="/images/movie_6.jpg"></div>
 					<div class="info_list">
-						<h2>毒液2</h2>
-						<p>观众评 <span class="grade">0.0</span></p>
+						<h2>毒液2<img src="@/assets/maxs.png" alt=""></h2>
+						<p><span>12000 people want to watch</span></p>
 						<p>主演: 汤姆·哈迪 / 米歇尔·威廉姆斯 / 斯蒂芬·格拉汉姆</p>
 						<p>今天60家影院放映800场</p>
 					</div>
@@ -44,8 +44,8 @@
                 <li>
 			    <div class="pic_show"><img src="/images/movie_7.jpg"></div>
 					<div class="info_list">
-						<h2>奇异博士2</h2>
-						<p>观众评 <span class="grade">0.0</span></p>
+						<h2>奇异博士2<img src="@/assets/maxs.png" alt=""></h2>
+						<p><span>5000 people want to watch</span></p>
 						<p>主演: 本尼迪克特·康伯巴奇 / 切瓦特·埃加福 / 伊丽莎白·奥尔森</p>
 						<p>今天55家影院放映600场</p>
 					</div>
@@ -53,14 +53,23 @@
 						预售
 					</div>
                 </li>
+
+				
 			</ul>
     </div>
 </template>
 
 
 <script>
+import BScroll from 'better-scroll';
 export default {
-   name:'ComingSoon'
+   name:'ComingSoon',
+   mounted(){
+    this.$nextTick(() => {
+        let bscrollDom = this.$refs.bscroll;
+        this.aBScroll = new BScroll(bscrollDom,{})
+    })   
+}
 }
 </script>
 
